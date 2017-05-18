@@ -1,0 +1,52 @@
+
+{
+  "requests": [
+    {
+      "updateCells": {
+        "start": {
+            "sheetId": 0,
+            "rowIndex": 0,
+            "columnIndex": 0
+        },
+        "rows": [
+          {
+            "values": [
+              { "userEnteredValue": { "stringValue": "1"} },
+            ],
+          },
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "autoFill": {
+        "useAlternateSeries": false,
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 0,
+          "endRowIndex": 1,
+          "startColumnIndex": 0,
+          "endColumnIndex": 100,
+        },
+      }
+    },
+    {
+      "copyPaste": {
+        "source": {
+          "sheetId": 0,
+          "startRowIndex": 0,
+          "endRowIndex": 1,
+          "startColumnIndex": 0,
+          "endColumnIndex": 100,          
+        },
+        "destination": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 100,
+          "startColumnIndex": 0,
+          "endColumnIndex": 100,
+        },
+      }
+    }
+  ]
+}
